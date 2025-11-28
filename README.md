@@ -57,7 +57,7 @@ O projeto está publicado no GitHub Pages e pode ser visualizado pelo link abaix
 
 👩‍🏫 Autoria
 
-samuel brayan zavadzki dos satos
+samuel brayan zavadzki dos santos
 Colégio Estadual Alfredo Parodi — Ensino Fundamental e Médio
 Projeto desenvolvido com os alunos do 2º ano do Ensino Médio — Itinerário de Exatas / Programação.
 
