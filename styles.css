@@ -26,12 +26,12 @@ a:hover {
 body {
   font-family: Arial, sans-serif;     /* Define a família de fontes principal */
   line-height: 1.6;                   /* Aumenta o espaçamento entre linhas para facilitar a leitura */
-  color: #222222;                     /* Cor padrão do texto (cinza bem escuro) */
+  color: #ee0c0c;                     /* Cor padrão do texto (cinza bem escuro) */
 }
 
 /* =============== HEADER =============== */
 .topo {
-  background: #1f2937;                /* Cor de fundo do topo (azul-acinzentado escuro) */
+  background: #0365ee;                /* Cor de fundo do topo (azul-acinzentado escuro) */
   color: #ffffff;                     /* Texto do topo em branco */
   padding: 16px;                      /* Respiro interno para não “grudar” nas bordas */
   text-align: center;                 /* Centraliza tudo dentro do header (título e menu) */
@@ -75,7 +75,7 @@ body {
 .caixa {
   background: #f8fafc;                /* Fundo claro para destacar o bloco do fundo da página */
   padding: 16px;                      /* Respiro interno do bloco */
-  border: 1px solid #e5e7eb;          /* Borda sutil para delimitar o bloco */
+  border: 1px solid #080808;          /* Borda sutil para delimitar o bloco */
   border-radius: 8px;                 /* Cantos arredondados suaves */
   margin-bottom: 16px;                /* Espaço externo abaixo para separar blocos */
 }
@@ -133,12 +133,12 @@ body {
   width: 100%;                        /* Faz cada imagem ocupar toda a largura da célula */
   max-width: 360px;                   /* Evita imagens muito largas em telas grandes */
   border-radius: 8px;                 /* Cantos arredondados das imagens */
-  border: 1px solid #e5e7eb;          /* Borda sutil ao redor das imagens */
+  border: 1px solid #d4d6db;          /* Borda sutil ao redor das imagens */
 }
 
 /* =============== FOOTER =============== */
 .rodape {
-  background: #1f2937;                /* Cor de fundo do rodapé */
+  background: #6e91c4;                /* Cor de fundo do rodapé */
   color: #ffffff;                     /* Cor do texto do rodapé */
   text-align: center;                 /* Centraliza o conteúdo do rodapé */
   padding: 14px;                      /* Respiro interno do rodapé */
