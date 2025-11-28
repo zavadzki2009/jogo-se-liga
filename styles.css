@@ -1,1 +1,166 @@
+/* =============== RESET BÁSICO =============== */
+* {
+  box-sizing: border-box;            /* Inclui padding/borda no cálculo da largura/altura do elemento */
+}
+
+html,
+body {
+  margin: 0;                          /* Remove margens padrão do navegador */
+  padding: 0;                         /* Remove espaçamentos internos padrão */
+}
+
+img {
+  max-width: 100%;                    /* Impede que a imagem ultrapasse a largura do contêiner */
+  display: block;                     /* Retira espaço extra que imagens inline geram */
+}
+
+a {
+  text-decoration: none;              /* Remove sublinhado padrão dos links */
+}
+
+a:hover {
+  text-decoration: underline;         /* Mostra sublinhado ao passar o mouse (feedback visual) */
+}
+
+/* =============== TIPOGRAFIA E CORES =============== */
+body {
+  font-family: Arial, sans-serif;     /* Define a família de fontes principal */
+  line-height: 1.6;                   /* Aumenta o espaçamento entre linhas para facilitar a leitura */
+  color: #222222;                     /* Cor padrão do texto (cinza bem escuro) */
+}
+
+/* =============== HEADER =============== */
+.topo {
+  background: #1f2937;                /* Cor de fundo do topo (azul-acinzentado escuro) */
+  color: #ffffff;                     /* Texto do topo em branco */
+  padding: 16px;                      /* Respiro interno para não “grudar” nas bordas */
+  text-align: center;                 /* Centraliza tudo dentro do header (título e menu) */
+}
+
+.logo {
+  margin: 0 0 8px 0;                  /* Zera margens e adiciona espaço abaixo do título */
+  font-size: 24px;                    /* Tamanho da fonte do título */
+}
+
+.menu {
+  margin-top: 8px;                    /* Espaço entre o título e os links do menu */
+  text-align: center;                 /* Centraliza os links do menu na horizontal */
+}
+
+.menu a {
+  display: inline-block;              /* Permite centralizar e ajustar espaçamento dos links */
+  color: #ffffff;                     /* Links do menu em branco */
+  margin: 0 12px;                     /* Espaço lateral igual entre os links */
+  padding: 6px 8px;                   /* Área clicável um pouco maior */
+  border-radius: 6px;                 /* Cantos levemente arredondados no hover */
+}
+
+.menu a:last-child {
+  margin-right: 12px;                 /* Mantém o mesmo espaçamento do último link */
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.12); /* Destaque suave ao passar o mouse */
+  text-decoration: none;              /* Remove sublinhado no hover (já temos o fundo) */
+}
+
+/* =============== MAIN (CONTEÚDO) =============== */
+.principal {
+  padding: 20px;                      /* Respiro interno geral do conteúdo principal */
+  max-width: 900px;                   /* Limita a largura do conteúdo para leitura confortável */
+  margin: 0 auto;                     /* Centraliza o bloco principal na página */
+  text-align: center;                 /* Centraliza os textos por padrão */
+}
+
+.caixa {
+  background: #f8fafc;                /* Fundo claro para destacar o bloco do fundo da página */
+  padding: 16px;                      /* Respiro interno do bloco */
+  border: 1px solid #e5e7eb;          /* Borda sutil para delimitar o bloco */
+  border-radius: 8px;                 /* Cantos arredondados suaves */
+  margin-bottom: 16px;                /* Espaço externo abaixo para separar blocos */
+}
+
+.texto {
+  margin-bottom: 12px;                /* Espaço abaixo do texto antes do próximo elemento */
+  text-align: center;                 /* Alinha o conteúdo textual ao centro */
+}
+
+.imagem {
+  margin-top: 12px;                   /* Espaço acima da imagem para separar do texto anterior */
+}
+
+.imagem img {
+  margin: 12px auto 0 auto;           /* Centraliza a imagem dentro da caixa */
+  border-radius: 8px;                 /* Cantos arredondados da imagem */
+  border: 1px solid #e5e7eb;          /* Borda sutil para destacar a imagem */
+}
+
+/* Variações visuais para destacar blocos */
+.destaque {
+  background: #eef2ff;                /* Fundo levemente azulado para chamar atenção */
+}
+
+.importancia {
+  background: #fff7ed;                /* Fundo levemente alaranjado para outra ênfase */
+}
+
+.introducao {
+  background: #f5f5f5;                /* Fundo cinza claro para introduções/avisos */
+}
+
+/* Cartões simples reutilizáveis (se precisar) */
+.bloco {
+  background: #ffffff;                /* Fundo branco para o cartão */
+  border: 1px solid #e5e7eb;          /* Borda sutil do cartão */
+  border-radius: 8px;                 /* Cantos arredondados do cartão */
+  padding: 12px;                      /* Respiro interno do cartão */
+  margin: 8px 0;                      /* Espaço vertical entre cartões */
+}
+
+/* =============== GALERIA EM GRADE (ATUAL) =============== */
+.galeria {
+  background: #ffffff;                /* Fundo branco do bloco de galeria */
+}
+
+.imagens-galeria {
+  display: grid;                      /* Ativa layout em grade para as imagens */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Colunas responsivas: mínimo 220px, máximo 1 fração */
+  gap: 12px;                          /* Espaço entre as células da grade */
+  justify-items: center;              /* Centraliza cada item dentro de sua célula */
+}
+
+.imagens-galeria img {
+  width: 100%;                        /* Faz cada imagem ocupar toda a largura da célula */
+  max-width: 360px;                   /* Evita imagens muito largas em telas grandes */
+  border-radius: 8px;                 /* Cantos arredondados das imagens */
+  border: 1px solid #e5e7eb;          /* Borda sutil ao redor das imagens */
+}
+
+/* =============== FOOTER =============== */
+.rodape {
+  background: #1f2937;                /* Cor de fundo do rodapé */
+  color: #ffffff;                     /* Cor do texto do rodapé */
+  text-align: center;                 /* Centraliza o conteúdo do rodapé */
+  padding: 14px;                      /* Respiro interno do rodapé */
+}
+
+/* =============== OPCIONAL: LADO A LADO NA HOME =============== */
+/*
+@media (min-width: 720px) {           /* Regras que só valem em telas a partir de 720px de largura */
+  .inicio .texto,
+  .inicio .imagem {
+    width: 50%;                       /* Divide a seção inicial em duas colunas iguais */
+    display: inline-block;            /* Coloca os blocos lado a lado (comportamento inline) */
+    vertical-align: middle;           /* Alinha verticalmente os blocos no meio */
+  }
+
+  .inicio .texto {
+    padding-right: 12px;              /* Espaço à direita do bloco de texto */
+  }
+
+  .inicio .imagem {
+    padding-left: 12px;               /* Espaço à esquerda do bloco de imagem */
+  }
+}
+*/
 
